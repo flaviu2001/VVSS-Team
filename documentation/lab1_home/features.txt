@@ -1,0 +1,20 @@
+Student menu
+    - add a student
+    - delete a student
+    - student look-up based on id
+    - modify a student - the feature does not work. It reports that the user does not exist, when it indeed does.
+    - display list of students
+
+Task menu
+    - add task
+    - extend deadline
+    - delete task
+    - task look-up based on id
+    - modify task - not working - same as before
+    - display list of tasks
+
+Grade menu:
+    - add grade
+    - delete grade
+    - find grade by student id and task id - not working - same as before
+    - display list of grades
