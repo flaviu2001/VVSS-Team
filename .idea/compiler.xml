@@ -9,5 +9,8 @@
         <module name="VVSS" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="VVSS" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
