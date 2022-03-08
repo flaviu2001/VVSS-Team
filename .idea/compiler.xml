@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="VVSS" target="17" />
+      <module name="VVSS" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
