@@ -33,8 +33,11 @@ public class StudentXMLRepo extends AbstractXMLRepository<String, Student> {
         String email =element.getElementsByTagName("email")
                 .item(0)
                 .getTextContent();
+        String professor =element.getElementsByTagName("profesor")
+                .item(0)
+                .getTextContent();
 
-        return new Student(studentId, nume, Integer.parseInt(grupa), email);
+        return new Student(studentId, nume, Integer.parseInt(grupa), email, professor);
     }
 
     @Override

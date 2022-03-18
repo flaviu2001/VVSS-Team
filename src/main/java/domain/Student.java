@@ -7,6 +7,7 @@ public class Student implements HasID<String> {
     private String nume;
     private int grupa;
     private String email;
+    private String professor;
 
     /**
      * Class Constructor
@@ -14,12 +15,14 @@ public class Student implements HasID<String> {
      * @param nume - numele studentului
      * @param grupa - grupa studentului
      * @param email - emailul unui student
+     * @param professor - professor of the student
      */
-    public Student(String idStudent, String nume, int grupa, String email) {
+    public Student(String idStudent, String nume, int grupa, String email, String professor) {
         this.idStudent = idStudent;
         this.nume = nume;
         this.grupa = grupa;
         this.email = email;
+        this.professor = professor;
     }
 
     /**
@@ -82,11 +85,20 @@ public class Student implements HasID<String> {
         this.email = email;
     }
 
+
+    public String getProfessor() {
+        return professor;
+    }
+
+    public void setProfessor(String professor) {
+        this.professor = professor;
+    }
+
     /**
      * @return un obiect de tip Student sub forma de string
      */
     @Override
     public String toString() {
-        return idStudent + "," + nume + "," + grupa + "," + email;
+        return idStudent + "," + nume + "," + grupa + "," + email + "," + professor;
     }
 }

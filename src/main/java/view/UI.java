@@ -110,7 +110,9 @@ public class UI {
         int grupa = scanner.nextInt();
         System.out.print("Introduceti email: ");
         String email = scanner.next();
-        Student student = new Student(idStudent, numeStudent, grupa, email);
+        System.out.print("Introduceti profesor: ");
+        String profesor = scanner.next();
+        Student student = new Student(idStudent, numeStudent, grupa, email, profesor);
         Student student1 = service.addStudent(student);
         if (student1 == null) {
             System.out.println("Student adaugat cu succes!");
@@ -164,7 +166,9 @@ public class UI {
         int grupa = scanner.nextInt();
         System.out.print("Introduceti email: ");
         String email = scanner.next();
-        Student student = new Student(id, nume, grupa, email);
+        System.out.print("Introduceti profesor: ");
+        String profesor = scanner.next();
+        Student student = new Student(id, nume, grupa, email, profesor);
         Student student1 = service.updateStudent(student);
         if (student1 == null) {
             System.out.print("Studentul nu exista!");
