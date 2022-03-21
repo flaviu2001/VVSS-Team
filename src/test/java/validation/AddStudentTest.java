@@ -104,6 +104,81 @@ public class AddStudentTest {
         assertFalse(service.getAllStudenti().iterator().hasNext());
     }
 
+    @Test
+    void tc7(){
+        student.setEmail("mail");
+
+        checkSuccessfulAdd();
+    }
+
+    @Test
+    void tc8(){
+        student.setEmail("");
+
+        assertThrows(ValidationException.class, ()->service.addStudent(student));
+        assertFalse(service.getAllStudenti().iterator().hasNext());
+    }
+
+    @Test
+    void tc9(){
+        student.setEmail(null);
+
+        assertThrows(ValidationException.class, ()->service.addStudent(student));
+        assertFalse(service.getAllStudenti().iterator().hasNext());
+    }
+
+    @Test
+    void tc10(){
+        student.setGrupa(-1);
+
+        assertThrows(ValidationException.class, ()->service.addStudent(student));
+        assertFalse(service.getAllStudenti().iterator().hasNext());
+    }
+
+    @Test
+    void tc11(){
+        student.setGrupa(0);
+
+        assertThrows(ValidationException.class, ()->service.addStudent(student));
+        assertFalse(service.getAllStudenti().iterator().hasNext());
+    }
+
+    @Test
+    void tc12(){
+        student.setGrupa(1);
+
+        checkSuccessfulAdd();
+    }
+
+    @Test
+    void tc13(){
+        student.setProfessor("professor");
+
+        checkSuccessfulAdd();
+    }
+
+    @Test
+    void tc14(){
+        student.setProfessor("");
+
+        assertThrows(ValidationException.class, ()->service.addStudent(student));
+        assertFalse(service.getAllStudenti().iterator().hasNext());
+    }
+
+    @Test
+    void tc15(){
+        student.setProfessor(null);
+
+        assertThrows(ValidationException.class, ()->service.addStudent(student));
+        assertFalse(service.getAllStudenti().iterator().hasNext());
+    }
+
+    @Test
+    void tc16() {
+        service.addStudent(student);
+        assertThrows(ValidationException.class, ()->service.addStudent(student));
+    }
+
     void checkSuccessfulAdd(){
         Iterator<Student> students = service.getAllStudenti().iterator();
         Student student = students.next();
