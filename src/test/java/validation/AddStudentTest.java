@@ -81,6 +81,29 @@ public class AddStudentTest {
         assertFalse(service.getAllStudenti().iterator().hasNext());
     }
 
+    @Test
+    void tc4(){
+        student.setNume("name");
+
+        checkSuccessfulAdd();
+    }
+
+    @Test
+    void tc5(){
+        student.setNume("");
+
+        assertThrows(ValidationException.class, ()->service.addStudent(student));
+        assertFalse(service.getAllStudenti().iterator().hasNext());
+    }
+
+    @Test
+    void tc6(){
+        student.setID(null);
+
+        assertThrows(ValidationException.class, ()->service.addStudent(student));
+        assertFalse(service.getAllStudenti().iterator().hasNext());
+    }
+
     void checkSuccessfulAdd(){
         Iterator<Student> students = service.getAllStudenti().iterator();
         Student student = students.next();
