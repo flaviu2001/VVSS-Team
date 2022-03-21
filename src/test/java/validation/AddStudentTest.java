@@ -98,7 +98,7 @@ public class AddStudentTest {
 
     @Test
     void tc6(){
-        student.setID(null);
+        student.setNume(null);
 
         assertThrows(ValidationException.class, ()->service.addStudent(student));
         assertFalse(service.getAllStudenti().iterator().hasNext());
