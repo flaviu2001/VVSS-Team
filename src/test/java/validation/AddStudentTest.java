@@ -85,6 +85,7 @@ public class AddStudentTest {
     void tc4(){
         student.setNume("name");
 
+        assertDoesNotThrow(()-> service.addStudent(student));
         checkSuccessfulAdd();
     }
 
@@ -108,6 +109,7 @@ public class AddStudentTest {
     void tc7(){
         student.setEmail("mail");
 
+        assertDoesNotThrow(()-> service.addStudent(student));
         checkSuccessfulAdd();
     }
 
@@ -147,6 +149,7 @@ public class AddStudentTest {
     void tc12(){
         student.setGrupa(1);
 
+        assertDoesNotThrow(()-> service.addStudent(student));
         checkSuccessfulAdd();
     }
 
@@ -154,6 +157,7 @@ public class AddStudentTest {
     void tc13(){
         student.setProfessor("professor");
 
+        assertDoesNotThrow(()-> service.addStudent(student));
         checkSuccessfulAdd();
     }
 
@@ -175,7 +179,7 @@ public class AddStudentTest {
 
     @Test
     void tc16() {
-        service.addStudent(student);
+        assertDoesNotThrow(()-> service.addStudent(student));
         assertThrows(ValidationException.class, ()->service.addStudent(student));
     }
 
