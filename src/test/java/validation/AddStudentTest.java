@@ -180,7 +180,11 @@ public class AddStudentTest {
     @Test
     void tc16() {
         assertDoesNotThrow(()-> service.addStudent(student));
-        assertThrows(ValidationException.class, ()->service.addStudent(student));
+
+        Student secondStudent = service.addStudent(student);
+
+        assertNotNull(secondStudent);
+        checkStudent(secondStudent);
     }
 
     void checkSuccessfulAdd(){
