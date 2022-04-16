@@ -1,0 +1,72 @@
+
+Tema: t1
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 1
+Feedback: feedback
+
+Tema: t1
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 1
+Feedback: feedback
+
+Tema: t1
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 1
+Feedback: feedback
+
+Tema: t1
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 1
+Feedback: feedback
+
+Tema: t1
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 1
+Feedback: feedback
+
+Tema: t1
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 1
+Feedback: feedback
+
+Tema: t1
+Nota: 0.2
+Predata in saptamana: 1
+Deadline: 1
+Feedback: feedback
+
+Tema: t1
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 1
+Feedback: feedback
+
+Tema: t1
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 1
+Feedback: feedback
+
+Tema: t1
+Nota: 10.0
+Predata in saptamana: 1
+Deadline: 1
+Feedback: feedback
+
+Tema: t1
+Nota: 7.5
+Predata in saptamana: 3
+Deadline: 2
+Feedback: feedback
+
+Tema: t1
+Nota: 7.5
+Predata in saptamana: 3
+Deadline: 2
+Feedback: feedback
