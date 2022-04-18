@@ -6,10 +6,4 @@
         <notaProf>10.0</notaProf>
         <dataCurenta>2018-10-10</dataCurenta>
     </nota>
-    <nota>
-        <idStudent>1</idStudent>
-        <idTema>11</idTema>
-        <notaProf>5.0</notaProf>
-        <dataCurenta>2022-10-10</dataCurenta>
-    </nota>
 </inbox>

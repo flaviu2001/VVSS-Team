@@ -1,0 +1,36 @@
+
+Tema: 13
+Nota: 7.5
+Predata in saptamana: 5
+Deadline: 4
+Feedback: bun
+
+Tema: 13
+Nota: 10.0
+Predata in saptamana: 4
+Deadline: 4
+Feedback: ok
+
+Tema: 13
+Nota: 4.0
+Predata in saptamana: 4
+Deadline: 4
+Feedback: nu e bun
+
+Tema: 13
+Nota: -0.5
+Predata in saptamana: 5
+Deadline: 4
+Feedback: prost
+
+Tema: 13
+Nota: 10.0
+Predata in saptamana: 4
+Deadline: 4
+Feedback: ok
+
+Tema: 13
+Nota: 10.0
+Predata in saptamana: 5
+Deadline: 5
+Feedback: egnw

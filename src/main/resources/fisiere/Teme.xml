@@ -15,6 +15,11 @@
         <deadline>3</deadline>
         <primire>2</primire>
     </nrTema>
+    <nrTema nrTema="13">
+        <descriere>work</descriere>
+        <deadline>4</deadline>
+        <primire>3</primire>
+    </nrTema>
     <nrTema nrTema="3">
         <descriere>abstract repository</descriere>
         <deadline>4</deadline>
