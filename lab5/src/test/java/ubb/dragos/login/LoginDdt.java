@@ -16,7 +16,8 @@ import org.openqa.selenium.WebDriver;
 import ubb.dragos.steps.EndUserSteps;
 
 @RunWith(SerenityParameterizedRunner.class)
-@UseTestDataFrom("src/test/resources/dragos/credentials.csv")
+//@UseTestDataFrom("src/test/resources/dragos/credentials.csv")
+@UseTestDataFrom("src/test/resources/dragos/credentials_example.csv")
 public class LoginDdt {
     @Managed(uniqueSession = true)
     public WebDriver webdriver;
